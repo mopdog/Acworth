@@ -1,0 +1,251 @@
+/*
+Theme Name:         Acworth Tourism	
+Theme URI:          http://acworthtourism.org
+Description:        Reverie is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:            3.1.0
+Author:             Mopdog
+Author URI:         http://themefortress.com/
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Customized Adjustments of Foundation for WordPress
+:: Styling Basic WordPress Outputs
+:: Customize Foundation Style Pagination for WP-Pagenavi
+:: Customize for BuddyPress
+:: Your Customized Style
+*/
+
+/* ---------------------------------------------------
+   Customized Adjustments of Foundation for WordPress
+--------------------------------------------------- */
+ 
+	/* Foundation-specific presentation CSS by ZURB */
+	div.reverie-header { margin: 0 0 20px 0; padding: 20px 0 0 0; border-bottom: solid 1px #ccc; }
+	div.reverie-header h1 { font-weight: 500; margin-bottom: 0; padding: 0; }
+	div.reverie-header h1 a { color: #181818; }
+	div.reverie-header h1 a:hover { color: #181818; }
+	
+	@media handheld, only screen and (max-width: 767px) {
+	header { position: relative; }
+	header .subheader { margin-bottom: 0; }
+	header .menu-action { float: left; position: relative; top: 1px; margin-top: -12px; }
+	header .menu-action .button.small { padding: 8px; }
+	header .menu-action .button.small svg { opacity: 0.5; }
+	header h1 { font-size: 27px; font-size: 2.7rem; margin-bottom: 18px; }
+	header h4 { font-size: 17px; font-size: 1.7rem; }
+	}
+
+/* -----------------------------------------
+   Styling Basic WordPress Outputs
+----------------------------------------- */
+	
+	/* Global */
+	h1, h2, h3, h4, h5 { font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif; font-weight: 300; }
+	h6 strong { font-weight: normal; letter-spacing: 0px; }
+	p { line-height: 22px; font-family:'HelveticaNeueW01-55Roma', sans-serif; color: #222; }
+	.clear { clear: both; }
+	.post-box a { font-weight: bold; }
+	a:hover { text-decoration: underline; }
+	p a { color: #68142a; }
+	.cat-item-5, .cat-item-1, .cat-item-6 { display: none; }
+	
+	/* GLOBAL CSS3 */
+	.nav, .promo-area, .single-page, .sidebar-box article { box-shadow: 0px 0px 3px 0px #023361; }
+	.events-title, .nav a, .sidebar-section h6  { text-shadow: 1px 1px 1px #000; }
+	
+	/* Add Divider for Listed Posts */
+	.post-divider { background:url(images/divider.png) no-repeat center top; height:36px; margin:20px 0 27px; }	
+	
+	/* Add Class for Images */
+	img.alignright { float: right; margin: 0 0 18px 18px; }
+	img.alignleft { float: left; margin: 0 18px 18px 0; }
+	img.aligncenter { display: block; margin: 18px auto; }
+	
+	
+	/* Add HTML5 Caption Class for Images */
+	figure.figure {	margin: 0 auto;	-webkit-border-radius: 3px;	-moz-border-radius: 3px; display: inline-block; }
+	figure.figure figcaption { padding: 8px 10px; font-size: 13px; font-size: 1.3rem; line-height: 18px; color: #555; }
+	figure.alignright.figure { float: right; margin: 0 0 18px 18px; }
+	figure.alignleft.figure { float: left; margin: 0 18px 18px 0; }
+	
+	/* Sidebar Adjustment */
+	.sidebar-section { padding-bottom: 10px; padding-top: 20px;	font-size: 13px; font-size: 1.3rem; font-weight: normal; }
+	
+	/* Footer Nav */
+	.footer-section { padding-bottom: 10px; padding-top: 20px; font-size: 13px; font-size: 1.3rem; font-weight: normal; }
+
+	
+	/* Breadcrumb Adjustment */
+	ul.breadcrumbs li span { padding-left: 3px; }
+	ul.breadcrumbs li a { padding-left: 0; }
+	
+	/* Comment Textarea Adjustment */
+	#respond textarea { height: 100px; }	
+
+/*  -------------------------------------------------------
+    Adjust Foundation 3 Pagination Style for WordPress
+    ---------------------------------------------------- */ 
+    
+    ul.page-numbers { display: block; height: 24px; margin-left: -5px; }
+    ul.page-numbers li {float: left; display: block; height: 24px; color: #999; font-size: 14px; margin-left: 5px; }
+    ul.page-numbers li a { display: block; padding: 1px 7px 1px; color: #555; }
+    ul.page-numbers li:hover a, ul.page-numbers li a:focus { background: #e6e6e6; }
+    ul.page-numbers li.unavailable a { cursor: default; color: #999; }
+    ul.page-numbers li.unavailable:hover a,ul.page-numbers li.unavailable a:focus { background: transparent; }
+    ul.page-numbers li span.current { background: #0864B3; color: #fff; font-weight: bold; cursor: default; display: block; padding: 1px 7px 1px; }    
+    
+    
+	
+	body, body.date { background:url(images/background2.jpg) no-repeat center top #7184bc; }
+	#main { background: none; }
+
+/* NAVIGATION */
+	.nav-row { width: 960px; min-width: 768px; margin: 0 auto; max-width: 100%; }
+	.toggleMenu { display:  none; background: #68142A; padding: 10px 15px; color: #fff; }
+	.toggleMenu:hover { color: #fff; }
+	.top-header .twelve { padding: 0px; }
+	.nav { list-style: none; *zoom: 1; background: url(images/red-texture.jpg) repeat; border: solid 1px #fff; font-family: 'Arvo', serif; display: table; width: 100%; margin-top: 15px;  }
+	.nav:before, .nav:after { content: " ";  display: table; }
+	.nav:after { clear: both; }
+	.nav ul { list-style: none; width: 9em; }
+	.nav a { padding: 10px 0px; color:#fff; display: block; text-align: center; margin: 0 10px; font-weight: bold;  }
+	.nav li { position: relative; display: table-cell; }
+	.nav > li { border-top: 1px solid #4B0000; }
+	.nav > li > .parent { background-image: url("images/downArrow.png"); background-repeat: no-repeat; background-position: right; }
+	.nav > li > a { display: block; }
+	.nav li  ul { position: absolute; left: -9999px; }
+	.nav > li.hover > ul { left: 0; }
+	.nav li li.hover ul { left: 100%; top: 0; }
+	.nav li li a { display: block; background: #1d7a62; position: relative; z-index:100; border-top: 1px solid #175e4c; }
+	.nav li li li a { background:#249578; z-index:200; border-top: 1px solid #1d7a62; }
+	.fixed nav { margin-top: 0px; }
+	.sticky { overflow: visible; }
+	
+/* LOGO */
+	.logo { margin-bottom: -25px; }
+	.logo img { margin: 0 auto; display: block; }
+	
+/* HOMEPAGE */
+	.flexslider { max-height: 331px; }
+	.flexslider img { max-height: 319px; }
+	.promo-area {background: url(images/red-texture.jpg) repeat; border: solid 1px #fff; }
+	.promo-content, .promo-content p { color: #fff; }
+	.promo-content { padding-top: 15px; }
+	.promo-content h2, .promo-content h3, .secondary-title, .story-title { font-family:'HelveticaNeueW01-97Blac'; }
+	.promo-content h2, .promo-content h3 {  color: #fff; margin: 2px 0; }
+	.divider-shadow { float: left; margin-left: -15px; }
+	.spacer { clear: both; height: 15px; }
+	
+	.slide-story a { color: #9BD3FF; font-weight: bold; }
+	.home-secondary { margin-top: 15px; }
+	.home-secondary > div { background: #fff; margin: 0 5px; min-height: 335px; padding: 0 5px 10px 5px; width: 32%;  }
+	.secondary-image { padding-top: 5px; height: 7em; overflow: hidden; }
+	.secondary-image img { width: 100%; }
+	.secondary-title { color: #fff; font-size: 50px; position: relative; margin: -55px 0 15px 10px;  }
+	.date { background: #68142a; border-radius: 5px; color: #fff; padding: 0px;  }
+	.story { clear: both; padding: 15px 5px; }
+	.events-title + .story { padding: 0px 5px 15px 5px;  }
+	.story-title a { font-size: 20px; color: #0864b3; }
+	.home-events .story-title { margin-top: 10px; }
+	.date .month, .date .day { margin: 0 auto; text-align: center; padding: 3px 0; font-family: 'Arvo', serif; }
+	.day { font-size: 20px; }
+	.month { background: #b68d00; border-top-left-radius: 5px; border-top-right-radius: 5px; }
+	
+	.contact-form { padding-top: 15px; }
+	.contact-form .clear { padding: 7px 0; }
+	.contact-form .wpcf7-textarea { height: 60px;  }
+	.contact-form input, .contact-form .wpcf7-textarea { background-color: #f6f6f6; }
+	.wpcf7-submit { float: right; margin-right: 22px; font-family: 'Arvo', serif; background: #68142A !important; border: none; color: #fff; padding: 5px 10px; border-radius: 5px; }
+	
+	
+/* SOCIAL */
+	.social { border-left: 1px solid #fff; border-right: 1px solid #fff; border-top: 1px solid #fff; background: #4c1525; padding: 8px 14px; width: 7% !important; margin-top: 1px; margin-left: 15px; }
+	.social div { float: left; margin-left: 17%; }
+
+/* SEARCH BOX */
+	.search-box { border-left: 1px solid #fff; border-right: 1px solid #fff; border-top: 1px solid #fff; background: #4c1525; padding: 10px; margin-right: 15px; }
+	#searchsubmit { background: #fff; border: none; }
+	#searchsubmit:hover { background: #f9f9f9; }
+
+/* FLEXSLIDER */
+	.flex-direction-nav li a { text-indent: -9999px; }
+	
+/* SUB PAGES */
+	.subpage-row { width: 980px !important;  }
+	.row .subpage-row { margin: 0px; }
+	#main .single-page { background: #fff; }
+	.page-title { font-family: 'Arvo', serif; color: #7a1028; letter-spacing: -2px; font-weight: bold; } 
+	.restaurants .six { padding: 20px 5px; font-size: 14px; line-height: 18px;  }
+	.restaurants .six a, .restaurants .six strong { font-weight: bold; font-size: 16px; text-indent: 0px;  }
+	.restaurants span { margin-left: 10px; display: block; }
+
+/* SIDEBAR */
+	.sidebar-box, .sidebar-box a { color: #fff; }
+	.sidebar-box ul li { list-style: none; }
+	.sidebar-section { padding-top: 0px; }
+	.sidebar-box article { background: url(images/red-texture.jpg) repeat; }
+	.sidebar-box article { margin: 10px 0 !important; }
+	.sidebar-box article:first-of-type { margin-top: 0px !important; }
+	.sidebar-section h6 { font-family:'HelveticaNeueW01-97Blac'; font-size: 22px; color: #fff; }
+	
+/* SEARCH RESULTS */
+	.search-results { padding-bottom: 50px; }
+	.search-results p { margin: 0px; }
+	.search-results > article, .news-page > article  { border-bottom: solid 1px #ccc; padding-bottom: 25px; padding-top: 9px; }
+	.read-more { display: block; float: right;  }
+	
+/* FOOTER */
+	.foot-line { height: 1px; background: #2f3a62; width: 100%; }
+	.site-footer { color: #2f3a62; font-size: 22px; font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif }
+	.foot-line, .site-footer { margin: 10px 0; }
+	.foot-line, .six { padding: 0;  }
+	.footer-phone { text-align: right; }
+
+
+@media screen and (max-width: 940px) { 
+/* SUBPAGE */
+	.subpage-row { width: auto !important;  }
+}
+
+
+@media screen and (max-width: 768px) {
+/* NAVIGATION */
+	.placeholder { display: block; height: 50px; }
+	.spacer, .divider-shadow { display: none; }
+    .active, .nav { display: block; }
+	nav {  background: #68142A; }
+	.nav { margin-top: 0px; background: none; border: none; }
+	.nav a { text-align: left; }
+    .nav > li { float: none; display: block; background: url(images/red-texture.jpg) repeat; }
+    .nav > li > .parent { background-position: 95% 50%; }
+    .nav li li .parent { background-image: url("images/downArrow.png"); background-repeat: no-repeat; background-position: 95% 50%; }
+    .nav ul { display: block; width: 100%; }
+    .nav > li.hover > ul , .nav li li.hover ul { position: static; } 
+	.toggleMenu { width: 3.125em; height: 3.125em; text-align: left; text-indent: -9999px; background-color: #68142A; position: relative; }
+	.toggleMenu:before, .toggleMenu:after { position: absolute; border: 2px solid #fff; top: 35%; left: 25%; right: 25%; content: ''; }
+	.toggleMenu:after { top: 60%; }
+
+/* SEARCH */ 
+	#s { margin-left: 15px; }
+	.search-box { width: 99%; }
+
+/* HOMEPAGE */
+    .social { width:14% !important; }
+	.logo { margin-bottom: 15px; }
+	.home-secondary .columns { margin: 10px 5%; }
+	.promo-area { margin: 10px 4%; }
+	.promo-area .columns { margin: 0; }
+	.story .date { float: left; }
+	.date .month { padding: 4px 12px; }
+	.story .date { margin: 0px 5%; }
+	.story-title a { font-size: 27px; }
+
+/* FOOTER */
+	footer .columns { text-align: center; margin: 15px 0; font-size: 16px; }
+	
+}
